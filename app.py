@@ -4,6 +4,8 @@ import os
 # 파일 감시 기능 비활성화
 os.environ['STREAMLIT_SERVER_MAX_UPLOAD_SIZE'] = '0'
 os.environ['STREAMLIT_SERVER_FILE_WATCHER_TYPE'] = 'none'
+os.environ['STREAMLIT_SERVER_RUN_ON_SAVE'] = 'false'
+os.environ['STREAMLIT_SERVER_HEADLESS'] = 'true'
 
 # 페이지 설정
 st.set_page_config(
