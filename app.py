@@ -1,6 +1,10 @@
 import streamlit as st
 import os
 
+# 파일 감시 기능 비활성화
+os.environ['STREAMLIT_SERVER_MAX_UPLOAD_SIZE'] = '0'
+os.environ['STREAMLIT_SERVER_FILE_WATCHER_TYPE'] = 'none'
+
 # 페이지 설정
 st.set_page_config(
     page_title="SpineCheck - 척추측만증 자가진단",
